@@ -1,6 +1,6 @@
 package com.lmxdawn.api.admin.utils;
 
-import com.lmxdawn.api.admin.entity.auth.AuthPermissionRule;
+import com.lmxdawn.api.admin.bean.AuthPermissionRule;
 import com.lmxdawn.api.admin.vo.auth.AuthPermissionRuleMergeVO;
 import org.springframework.beans.BeanUtils;
 

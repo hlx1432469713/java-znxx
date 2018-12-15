@@ -6,6 +6,7 @@ import java.util.List;
 
 /**
  * 权限列表整合为多维数组的视图
+ * @author hlx
  */
 @Data
 public class AuthPermissionRuleMergeVO {
@@ -19,7 +20,9 @@ public class AuthPermissionRuleMergeVO {
     private String condition;
     private Long listorder;
 
-    // 一次性加载所有权限规则生成 tree 树形节点时需要
+    /*
+    一次性加载所有权限规则生成 tree 树形节点时需要
+    */
     private List<AuthPermissionRuleMergeVO> children;
 
 }

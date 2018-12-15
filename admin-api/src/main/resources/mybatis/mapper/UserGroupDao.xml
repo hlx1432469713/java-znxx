@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.lmxdawn.api.admin.mapper.UserGroupDao" >
+
+    <select id="getUserGroupInfoByStudWxId" resultType="com.lmxdawn.api.admin.bean.UserGroup">
+        SELECT * FROM user_group where user_group_id = #{userGroupId}
+    </select>
+
+    <!--<select id="listByRoleId" resultType="com.lmxdawn.api.admin.bean.Student">-->
+        <!--SELECT permission_rule_id-->
+        <!--FROM auth_permission-->
+        <!--where role_id = #{roleId}-->
+    <!--</select>-->
+
+
+    <!--<insert id="insertAuthPermissionAll">-->
+        <!--INSERT INTO auth_permission-->
+        <!--(role_id, permission_rule_id,`type`)-->
+        <!--VALUES-->
+        <!--<foreach collection="list" item="item" separator=",">-->
+            <!--<if test="item.roleId != null and item.permissionRuleId != null and item.type != null">-->
+                <!--(#{item.roleId}, #{item.permissionRuleId}, #{item.type})-->
+            <!--</if>-->
+        <!--</foreach>-->
+    <!--</insert>-->
+
+
+    <!--<delete id="deleteByRoleId" parameterType="java.lang.Long">-->
+        <!--delete from auth_permission where role_id = #{roleId}-->
+    <!--</delete>-->
+
+</mapper>

@@ -3,7 +3,7 @@ package com.lmxdawn.api.admin.aspect;
 import com.lmxdawn.api.admin.annotation.AuthRuleAnnotation;
 import com.lmxdawn.api.admin.enums.ResultEnum;
 import com.lmxdawn.api.admin.exception.JsonException;
-import com.lmxdawn.api.admin.service.auth.AuthLoginService;
+import com.lmxdawn.api.admin.service.AuthLoginService;
 import com.lmxdawn.api.common.utils.JwtUtils;
 import io.jsonwebtoken.Claims;
 import lombok.extern.slf4j.Slf4j;
@@ -24,14 +24,17 @@ import java.util.List;
 /**
  * 登录验证 AOP
  */
-@Aspect
-@Component
-@Slf4j
+@Aspect     //使之成为切面类
+@Component  //把切面类加入到IOC容器中
+@Slf4j      //注解方式实现日志
 public class AuthorizeAspect {
 
     @Resource
     private AuthLoginService authLoginService;
 
+    /*定义一个方法, 用于声明切入点表达式. 一般地, 该方法中再不需要添入其他的代码.
+   使用 @Pointcut 来声明切入点表达式.
+   后面的其他通知直接使用方法名来引用当前的切入点表达式. */
     @Pointcut("@annotation(com.lmxdawn.api.admin.annotation.AuthRuleAnnotation)")
     public void adminLoginVerify() {
     }

@@ -1,7 +1,7 @@
 package com.lmxdawn.api.admin.service.auth.impl;
 
 import com.lmxdawn.api.BaseAdminApplicationTest;
-import com.lmxdawn.api.admin.entity.auth.AuthPermissionRule;
+import com.lmxdawn.api.admin.entity.bean.AuthPermissionRule;
 import com.lmxdawn.api.admin.service.auth.AuthPermissionRuleService;
 import org.junit.Test;
 

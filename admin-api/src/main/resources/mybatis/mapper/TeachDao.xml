@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.lmxdawn.api.admin.mapper.TeacherDao" >
+
+    <select id="getTeacherInfoByOpenId" resultType="com.lmxdawn.api.admin.bean.Teacher">
+        SELECT * FROM teacher_info where teach_wx_id = #{teachWxId}
+    </select>
+
+    <update id="updateTeachInfoByStudId" parameterType="com.lmxdawn.api.admin.bean.Teacher">
+        update teacher_info
+        <set>
+            <if test="teachWxId != null and teachWxId !=''">
+                teach_wx_id = #{teachWxId},
+            </if>
+            <if test="teachName != null and teachName !=''">
+                teach_name = #{teachName},
+            </if>
+            <if test="teachSex != null and teachSex !=''">
+                teach_sex = #{teachSex},
+            </if>
+            <if test="teachNation != null and teachNation !=''">
+                teach_nation = #{teachNation},
+            </if>
+            <if test="teachPhone != null and teachPhone !=''">
+                teach_phone = #{teachPhone},
+            </if>
+            <if test="teachNumber != null and teachNumber !=''">
+                teach_number = #{teachNumber},
+            </if>
+            <if test="teachTitle != null and teachTitle !=''">
+                teach_title = #{teachTitle},
+            </if>
+            <if test="teachWorktime != null and teachWorktime !=''">
+                teach_worktime = #{teachWorktime},
+            </if>
+            <if test="teachScheduleId != null and teachScheduleId !=''">
+                teach_schedule_id = #{teachScheduleId},
+            </if>
+        </set>
+        where teach_id = #{teachId}
+    </update>
+
+
+
+    <insert id="addStudentInfo">
+        INSERT INTO student_info
+        (teach_name,teach_sex,teach_nation,teach_phone,teach_number,
+        teach_title,teach_worktime,teach_schedule_id)
+        VALUES
+        (#{teachName},#{teachSex},#{teachNation},#{teachPhone},#{teachNumber},
+         #{teachTitle},#{teachWorktime},#{teachScheduleId})
+
+    </insert>
+
+
+</mapper>

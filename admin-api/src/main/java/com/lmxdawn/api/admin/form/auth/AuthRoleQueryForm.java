@@ -15,5 +15,4 @@ import javax.validation.constraints.NotNull;
 public class AuthRoleQueryForm extends ListPageForm {
     private String name;
     private Integer status;
-
 }

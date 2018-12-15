@@ -2,7 +2,7 @@ package com.lmxdawn.api.admin.service.auth.impl;
 
 import com.github.pagehelper.PageInfo;
 import com.lmxdawn.api.BaseAdminApplicationTest;
-import com.lmxdawn.api.admin.entity.auth.AuthAdmin;
+import com.lmxdawn.api.admin.entity.bean.AuthAdmin;
 import com.lmxdawn.api.admin.form.auth.AuthAdminSaveForm;
 import com.lmxdawn.api.admin.form.auth.AuthAdminQueryForm;
 import com.lmxdawn.api.admin.service.auth.AuthAdminService;

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.lmxdawn.api.admin.mapper.StudentDao" >
+
+    <select id="getStudentInfoByOpenId" resultType="com.lmxdawn.api.admin.bean.Student">
+        SELECT * FROM student_info where stud_wx_id = #{studWxId}
+    </select>
+
+    <update id="updateStudentInfoByStudId" parameterType="com.lmxdawn.api.admin.bean.Student">
+        update student_info
+        <set>
+            <if test="studWxId != null and studWxId !=''">
+                stud_wx_id = #{studWxId},
+            </if>
+            <if test="studName != null and studName !=''">
+                stud_name = #{studName},
+            </if>
+            <if test="studSex != null and studSex !=''">
+                stud_sex = #{studSex},
+            </if>
+            <if test="studBirth != null and studBirth !=''">
+                stud_birth = #{studBirth},
+            </if>
+            <if test="studNation != null and studNation !=''">
+                stud_nation = #{studNation},
+            </if>
+            <if test="studPhone != null and studPhone !=''">
+                stud_phone = #{studPhone},
+            </if>
+            <if test="studEnterTime != null and studEnterTime !=''">
+                stud_enter_time = #{studEnterTime},
+            </if>
+            <if test="studSchool != null and studSchool !=''">
+                stud_school = #{studSchool},
+            </if>
+            <if test="studEduSystem != null and studEduSystem !=''">
+                stud_edu_system = #{studEduSystem},
+            </if>
+            <if test="studNumber != null and studNumber !=''">
+                stud_number = #{studNumber},
+            </if>
+            <if test="studClassroom != null and studClassroom !=''">
+                stud_classroom = #{studClassroom},
+            </if>
+            <if test="studCredits != null and studCredits !=''">
+                stud_credits = #{studCredits},
+            </if>
+            <if test="studScheduleId != null and studScheduleId !=''">
+                stud_schedule_id = #{studScheduleId},
+            </if>
+        </set>
+        where stud_id = #{studId}
+    </update>
+
+
+
+    <insert id="addStudentInfo">
+        INSERT INTO student_info
+        (stud_wx_id,stud_name,stud_sex,stud_birth,stud_nation,stud_phone,
+        stud_enter_time,stud_school,stud_edu_system,stud_number,
+        stud_classroom,stud_credits,stud_schedule_id)
+        VALUES
+        (#{studWxId},#{studName},#{studSex},#{studBirth},#{studNation},#{studPhone},
+         #{studEnterTime},#{studSchool},#{studEduSystem},#{studNumber},
+         #{studClassroom},#{studCredits},#{studScheduleId})
+
+    </insert>
+
+
+    <!--<delete id="deleteByRoleId" parameterType="java.lang.Long">-->
+        <!--delete from auth_permission where role_id = #{roleId}-->
+    <!--</delete>-->
+
+</mapper>

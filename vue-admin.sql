@@ -127,19 +127,19 @@ CREATE TABLE `auth_permission_rule` (
 -- ----------------------------
 INSERT INTO `auth_permission_rule` VALUES ('1', '0', '0', 'user_manage', '用户管理', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
 INSERT INTO `auth_permission_rule` VALUES ('2', '1', '0', 'user_manage/admin_manage', '管理组1', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
-INSERT INTO `auth_permission_rule` VALUES ('3', '2', '0', 'admin/auth/admin/index', '管理员管理', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
-INSERT INTO `auth_permission_rule` VALUES ('4', '3', '0', 'admin/auth/admin/save', '添加管理员', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
-INSERT INTO `auth_permission_rule` VALUES ('5', '3', '0', 'admin/auth/admin/edit', '编辑管理员', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
-INSERT INTO `auth_permission_rule` VALUES ('6', '3', '0', 'admin/auth/admin/delete', '删除管理员', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
-INSERT INTO `auth_permission_rule` VALUES ('7', '2', '0', 'admin/auth/role/index', '角色管理', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
-INSERT INTO `auth_permission_rule` VALUES ('8', '7', '0', 'admin/auth/role/save', '添加角色', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
-INSERT INTO `auth_permission_rule` VALUES ('9', '7', '0', 'admin/auth/role/edit', '编辑角色', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
-INSERT INTO `auth_permission_rule` VALUES ('10', '7', '0', 'admin/auth/role/delete', '删除角色', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
-INSERT INTO `auth_permission_rule` VALUES ('11', '7', '0', 'admin/auth/role/auth', '角色授权', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
-INSERT INTO `auth_permission_rule` VALUES ('12', '2', '0', 'admin/auth/permission_rule/index', '权限管理', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
-INSERT INTO `auth_permission_rule` VALUES ('13', '12', '0', 'admin/auth/permission_rule/save', '添加权限', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
-INSERT INTO `auth_permission_rule` VALUES ('14', '12', '0', 'admin/auth/permission_rule/edit', '编辑权限', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
-INSERT INTO `auth_permission_rule` VALUES ('15', '12', '0', 'admin/auth/permission_rule/delete', '删除权限', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
+INSERT INTO `auth_permission_rule` VALUES ('3', '2', '0', 'admin/bean/admin/index', '管理员管理', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
+INSERT INTO `auth_permission_rule` VALUES ('4', '3', '0', 'admin/bean/admin/save', '添加管理员', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
+INSERT INTO `auth_permission_rule` VALUES ('5', '3', '0', 'admin/bean/admin/edit', '编辑管理员', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
+INSERT INTO `auth_permission_rule` VALUES ('6', '3', '0', 'admin/bean/admin/delete', '删除管理员', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
+INSERT INTO `auth_permission_rule` VALUES ('7', '2', '0', 'admin/bean/role/index', '角色管理', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
+INSERT INTO `auth_permission_rule` VALUES ('8', '7', '0', 'admin/bean/role/save', '添加角色', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
+INSERT INTO `auth_permission_rule` VALUES ('9', '7', '0', 'admin/bean/role/edit', '编辑角色', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
+INSERT INTO `auth_permission_rule` VALUES ('10', '7', '0', 'admin/bean/role/delete', '删除角色', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
+INSERT INTO `auth_permission_rule` VALUES ('11', '7', '0', 'admin/bean/role/bean', '角色授权', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
+INSERT INTO `auth_permission_rule` VALUES ('12', '2', '0', 'admin/bean/permission_rule/index', '权限管理', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
+INSERT INTO `auth_permission_rule` VALUES ('13', '12', '0', 'admin/bean/permission_rule/save', '添加权限', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
+INSERT INTO `auth_permission_rule` VALUES ('14', '12', '0', 'admin/bean/permission_rule/edit', '编辑权限', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
+INSERT INTO `auth_permission_rule` VALUES ('15', '12', '0', 'admin/bean/permission_rule/delete', '删除权限', '1', '', '999', '2018-11-23 10:23:52', '2018-11-23 10:23:52');
 
 -- ----------------------------
 -- Table structure for auth_role

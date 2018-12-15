@@ -1,7 +1,7 @@
 package com.lmxdawn.api.admin.service.auth.impl;
 
 import com.lmxdawn.api.BaseAdminApplicationTest;
-import com.lmxdawn.api.admin.entity.auth.AuthRoleAdmin;
+import com.lmxdawn.api.admin.entity.bean.AuthRoleAdmin;
 import com.lmxdawn.api.admin.service.auth.AuthRoleAdminService;
 import org.junit.Test;
 

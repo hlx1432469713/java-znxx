@@ -12,12 +12,12 @@
     <packaging>pom</packaging>
 
     <name>admin</name>
-    <description>vue后台管理系统</description>
+    <description>智能学习后台管理系统</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.0.RELEASE</version>
+        <version>2.0.0.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
