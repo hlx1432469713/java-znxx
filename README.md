@@ -16,13 +16,13 @@
 
 # 前言
 
-**项目PHP前端地址：** <a href="https://github.com/lmxdawn/vue-admin-html" target="_blank">https://github.com/lmxdawn/vue-admin-html</a>
 
-**项目JAVA前端地址：** <a href="https://github.com/lmxdawn/vue-admin-html-java" target="_blank">https://github.com/lmxdawn/vue-admin-html-java</a>
 
-**项目JAVA后端地址：** <a href="https://github.com/lmxdawn/vue-admin-java" target="_blank">https://github.com/lmxdawn/vue-admin-java</a>
+**项目JAVA前端地址：** 
 
-**项目PHP后端地址：** <a href="https://github.com/lmxdawn/vue-admin-php" target="_blank">https://github.com/lmxdawn/vue-admin-php</a>
+**项目JAVA后端地址：** 
+
+
 
 # 欢迎 star
 
@@ -43,18 +43,8 @@
 - [x] 401/404错误页面
 - [x] 动态面包屑
 - [x] 动态侧边栏
-- [x] 广告管理
 
-# Online Demo
- （建议使用最新版Chrome浏览器）
-[在线 Demo](https://lmxdawn.github.io/vue-admin-java)
 
-# Donate
-鼓励鼓励鼓励，重要的事情说三遍 
-![donate](https://lmxdawn.github.io/images/pay.png)
 
-# License
 
-[MIT](https://github.com/lmxdawn/vue-admin-java/blob/master/LICENSE)
 
-Copyright (c) 2018 lmxdawn
